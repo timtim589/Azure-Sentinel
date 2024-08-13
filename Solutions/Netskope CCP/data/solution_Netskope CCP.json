@@ -4,7 +4,7 @@
     "Logo": "<img src=\"https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg\" width=\"75px\" height=\"75px\">",
     "Description": "The [Netskope](https://www.netskope.com/) CCP solution for Microsoft Sentinel enables you to ingest Netskope alert events using the Codeless Connector Platform.",
     "Data Connectors": [
-      "Data Connectors/Netskope_CCP.json"
+      "Data Connectors/Netskope_CCP/dataConnectorDefinition.json"
     ],
     "BasePath": "C:\\GitHub\\Azure-Sentinel\\Solutions\\CiscoUmbrella",
     "Version": "3.0.0",
