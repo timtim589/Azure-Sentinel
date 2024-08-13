@@ -1,0 +1,1214 @@
+[
+    {
+        "name": "NetskopeAlertEvents_CL",
+        "apiVersion": "2022-10-01",
+        "type": "Microsoft.OperationalInsights/workspaces/tables",
+        "properties": {
+            "schema": {
+                "name": "NetskopeAlertEvents_CL",
+                "columns": [
+                    {
+                        "name": "access_method",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "account_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "account_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "acked",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "action",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "activity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "alert",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "alert_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "alert_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "alert_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "app",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "app_activity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "app_session_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "appcategory",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "appsuite",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "asset_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "asset_object_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_date",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_description",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_media_references",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_score",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "breach_target_references",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "browser",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "browser_session_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "browser_version",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "bypass_traffic",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "category",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "cci",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "ccl",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "client_bytes",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "compliance_standards",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "conn_duration",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "conn_endtime",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "conn_starttime",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "connection_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "CononicalName",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "count_i",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "data_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "device",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "device_classification",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_file",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_incident_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_is_unique_count",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_mail_parent_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_parent_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_profile",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_rule",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_rule_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_rule_severity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dlp_unique_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "domain",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_country",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_geoip_src",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_latitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_location",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_longitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_region",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_timezone",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dst_zipcode",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dsthost",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dstip",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "dstport",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "email_source",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "event_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "evt_src_chnl",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "exposure",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "external_collaborator_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "external_email",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "file_cls_encrypted",
+                        "type": "boolean",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "file_lang",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "file_path",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "file_size",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "file_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "from_user",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "fromlogs",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "hostname",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "http_transaction_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "iaas_asset_tags",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "iaas_remediated",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "instance",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "instance_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "internal_collaborator_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "justification_reason",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "justification_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_app",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_country",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_device",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_location",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_region",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "last_timestamp",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "log_file_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malicious",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_category",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_country",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_ip_host",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_latitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_longitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "malsite_region",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "managed_app",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "managementID",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "matched_username",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "md5",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "mime_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "modified",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "netskope_activity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "netskope_pop",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "notify_template",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "nsdeviceuid",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "numbytes",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "object",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "object_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "object_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "org",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "organization_unit",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "orig_ty",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "orignal_file_path",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "os",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "os_version",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "other_categories",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "owner",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "page",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "page_site",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "parent_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "password_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "policy",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "policy_actions",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "policy_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "profile_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "protocol",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "referer",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "region_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "region_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "req_cnt",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "request_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "resource_category",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "resource_group",
+                        "type": "dynamic",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "resp_cnt",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sa_profile_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sa_profile_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sa_rule_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sa_rule_name",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sa_rule_severity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sAMAccountName",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sanctioned_instance",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "scan_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "serial",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "server_bytes",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sessionid",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "severity",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "severity_level",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "severity_level_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "sha256",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "shared_domains",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "shared_with",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "site",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_country",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_geoip_src",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_latitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_location",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_longitude",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_region",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_time",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_timezone",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "src_zipcode",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "srcip",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "suppression_end_time",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "suppression_key",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "suppression_start_time",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "telemetry_app",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "threat_match_field",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "threat_match_value",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "threat_source_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "threshold",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "threshold_time",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "title_s",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "to_object",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "total_collaborator_count",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "traffic_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "transaction_id",
+                        "type": "int",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "true_obj_category",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "true_obj_type",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "tss_mode",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "two_factor_auth",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "type_s",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "universal_connector",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "ur_normalized",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "url",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "user",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "user_generated",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "user_id",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "useragent",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "userip",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "userkey",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "userPrincipalName",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "web_universal_connector",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "web_url",
+                        "type": "string",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    },
+                    {
+                        "name": "TimeGenerated",
+                        "type": "datetime",
+                        "isDefaultDisplay": false,
+                        "isHidden": false
+                    }
+                ]
+            }
+        }
+    }
+]

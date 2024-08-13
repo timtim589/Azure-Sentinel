@@ -1,0 +1,15 @@
+{
+	"publisherId": "maserobv",
+	"offerId": "testing_offer",
+	"firstPublishDate": "2024-09-01",
+	"providers": ["Masero"],
+	"categories": {
+		"domains" : ["Security - Network"]
+	},
+	"support": {
+		"name": "Tim Groothuis",
+		"email": "support@masero.nl",
+		"tier": "Partner",
+		"link": "https://www.masero.nl"
+	}
+}

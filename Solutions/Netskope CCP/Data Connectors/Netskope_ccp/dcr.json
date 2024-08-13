@@ -1,0 +1,841 @@
+[
+    {
+        "name": "NetskopeDCR",
+        "apiVersion": "2022-06-01",
+        "type": "Microsoft.Insights/dataCollectionRules",
+        "location": "{{location}}",
+        "properties": {
+            "dataCollectionEndpointId": "{{dataCollectionEndpointId}}",
+            "streamDeclarations": {
+                "Custom-NetskopeAlertEvents": {
+                    "columns": [
+                        {
+                            "name": "TimeGenerated",
+                            "type": "datetime"
+                        },
+                        {
+                            "name": "_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "access_method",
+                            "type": "string"
+                        },
+                        {
+                            "name": "account_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "account_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "acked",
+                            "type": "string"
+                        },
+                        {
+                            "name": "action",
+                            "type": "string"
+                        },
+                        {
+                            "name": "activity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "alert",
+                            "type": "string"
+                        },
+                        {
+                            "name": "alert_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "alert_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "app",
+                            "type": "string"
+                        },
+                        {
+                            "name": "appcategory",
+                            "type": "string"
+                        },
+                        {
+                            "name": "asset_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "asset_object_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "browser",
+                            "type": "string"
+                        },
+                        {
+                            "name": "category",
+                            "type": "string"
+                        },
+                        {
+                            "name": "cci",
+                            "type": "int"
+                        },
+                        {
+                            "name": "ccl",
+                            "type": "string"
+                        },
+                        {
+                            "name": "compliance_standards",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "device",
+                            "type": "string"
+                        },
+                        {
+                            "name": "iaas_asset_tags",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "iaas_remediated",
+                            "type": "string"
+                        },
+                        {
+                            "name": "instance_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "object",
+                            "type": "string"
+                        },
+                        {
+                            "name": "object_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "organization_unit",
+                            "type": "string"
+                        },
+                        {
+                            "name": "os",
+                            "type": "string"
+                        },
+                        {
+                            "name": "other_categories",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "policy",
+                            "type": "string"
+                        },
+                        {
+                            "name": "policy_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "region_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "region_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "resource_category",
+                            "type": "string"
+                        },
+                        {
+                            "name": "resource_group",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "sa_profile_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "sa_profile_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sa_rule_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sa_rule_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sa_rule_severity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "site",
+                            "type": "string"
+                        },
+                        {
+                            "name": "timestamp",
+                            "type": "int"
+                        },
+                        {
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "name": "traffic_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "ur_normalized",
+                            "type": "string"
+                        },
+                        {
+                            "name": "user",
+                            "type": "string"
+                        },
+                        {
+                            "name": "userkey",
+                            "type": "string"
+                        },
+                        {
+                            "name": "shared_domains",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dlp_rule",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dlp_profile",
+                            "type": "string"
+                        },
+                        {
+                            "name": "external_collaborator_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "alert_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "last_region",
+                            "type": "string"
+                        },
+                        {
+                            "name": "severity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "protocol",
+                            "type": "string"
+                        },
+                        {
+                            "name": "managementID",
+                            "type": "string"
+                        },
+                        {
+                            "name": "evt_src_chnl",
+                            "type": "string"
+                        },
+                        {
+                            "name": "netskope_pop",
+                            "type": "string"
+                        },
+                        {
+                            "name": "malsite_category",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "threshold",
+                            "type": "int"
+                        },
+                        {
+                            "name": "file_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "user_generated",
+                            "type": "string"
+                        },
+                        {
+                            "name": "http_transaction_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "owner",
+                            "type": "string"
+                        },
+                        {
+                            "name": "malsite_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "web_url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "password_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_zipcode",
+                            "type": "string"
+                        },
+                        {
+                            "name": "severity_level",
+                            "type": "string"
+                        },
+                        {
+                            "name": "justification_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "log_file_name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "scan_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "threat_match_value",
+                            "type": "string"
+                        },
+                        {
+                            "name": "server_bytes",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dsthost",
+                            "type": "string"
+                        },
+                        {
+                            "name": "file_size",
+                            "type": "int"
+                        },
+                        {
+                            "name": "managed_app",
+                            "type": "string"
+                        },
+                        {
+                            "name": "app_session_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_file",
+                            "type": "string"
+                        },
+                        {
+                            "name": "email_source",
+                            "type": "string"
+                        },
+                        {
+                            "name": "appsuite",
+                            "type": "string"
+                        },
+                        {
+                            "name": "shared_with",
+                            "type": "string"
+                        },
+                        {
+                            "name": "orig_ty",
+                            "type": "string"
+                        },
+                        {
+                            "name": "parent_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "total_collaborator_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "sanctioned_instance",
+                            "type": "string"
+                        },
+                        {
+                            "name": "threat_source_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "last_app",
+                            "type": "string"
+                        },
+                        {
+                            "name": "malsite_country",
+                            "type": "string"
+                        },
+                        {
+                            "name": "data_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "bypass_traffic",
+                            "type": "string"
+                        },
+                        {
+                            "name": "fromlogs",
+                            "type": "string"
+                        },
+                        {
+                            "name": "page",
+                            "type": "string"
+                        },
+                        {
+                            "name": "conn_duration",
+                            "type": "int"
+                        },
+                        {
+                            "name": "breach_media_references",
+                            "type": "string"
+                        },
+                        {
+                            "name": "telemetry_app",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dlp_mail_parent_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "file_lang",
+                            "type": "string"
+                        },
+                        {
+                            "name": "external_email",
+                            "type": "int"
+                        },
+                        {
+                            "name": "malsite_ip_host",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_geoip_src",
+                            "type": "int"
+                        },
+                        {
+                            "name": "event_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "breach_date",
+                            "type": "int"
+                        },
+                        {
+                            "name": "internal_collaborator_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dst_location",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_zipcode",
+                            "type": "string"
+                        },
+                        {
+                            "name": "from_user",
+                            "type": "string"
+                        },
+                        {
+                            "name": "policy_actions",
+                            "type": "dynamic"
+                        },
+                        {
+                            "name": "notify_template",
+                            "type": "string"
+                        },
+                        {
+                            "name": "numbytes",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hostname",
+                            "type": "string"
+                        },
+                        {
+                            "name": "suppression_end_time",
+                            "type": "int"
+                        },
+                        {
+                            "name": "malicious",
+                            "type": "string"
+                        },
+                        {
+                            "name": "referer",
+                            "type": "string"
+                        },
+                        {
+                            "name": "malsite_region",
+                            "type": "string"
+                        },
+                        {
+                            "name": "profile_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "browser_session_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "serial",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sAMAccountName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "userPrincipalName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "justification_reason",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_latitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_unique_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "true_obj_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "breach_target_references",
+                            "type": "string"
+                        },
+                        {
+                            "name": "suppression_start_time",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dst_region",
+                            "type": "string"
+                        },
+                        {
+                            "name": "breach_description",
+                            "type": "string"
+                        },
+                        {
+                            "name": "modified",
+                            "type": "int"
+                        },
+                        {
+                            "name": "suppression_key",
+                            "type": "string"
+                        },
+                        {
+                            "name": "CononicalName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_latitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "object_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "resp_cnt",
+                            "type": "int"
+                        },
+                        {
+                            "name": "web_universal_connector",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_country",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_region",
+                            "type": "string"
+                        },
+                        {
+                            "name": "malsite_latitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "netskope_activity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "to_object",
+                            "type": "string"
+                        },
+                        {
+                            "name": "file_path",
+                            "type": "string"
+                        },
+                        {
+                            "name": "last_location",
+                            "type": "string"
+                        },
+                        {
+                            "name": "exposure",
+                            "type": "string"
+                        },
+                        {
+                            "name": "threshold_time",
+                            "type": "int"
+                        },
+                        {
+                            "name": "universal_connector",
+                            "type": "string"
+                        },
+                        {
+                            "name": "severity_level_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "useragent",
+                            "type": "string"
+                        },
+                        {
+                            "name": "breach_score",
+                            "type": "string"
+                        },
+                        {
+                            "name": "connection_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "src_location",
+                            "type": "string"
+                        },
+                        {
+                            "name": "true_obj_category",
+                            "type": "string"
+                        },
+                        {
+                            "name": "org",
+                            "type": "string"
+                        },
+                        {
+                            "name": "instance",
+                            "type": "string"
+                        },
+                        {
+                            "name": "breach_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "request_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userip",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_geoip_src",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_rule_count",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_rule_severity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "orignal_file_path",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_longitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "app_activity",
+                            "type": "string"
+                        },
+                        {
+                            "name": "os_version",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sessionid",
+                            "type": "string"
+                        },
+                        {
+                            "name": "srcip",
+                            "type": "string"
+                        },
+                        {
+                            "name": "two_factor_auth",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sha256",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_timezone",
+                            "type": "string"
+                        },
+                        {
+                            "name": "src_time",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dst_longitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "domain",
+                            "type": "string"
+                        },
+                        {
+                            "name": "transaction_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "threat_match_field",
+                            "type": "string"
+                        },
+                        {
+                            "name": "tss_mode",
+                            "type": "string"
+                        },
+                        {
+                            "name": "mime_type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "client_bytes",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_incident_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "src_timezone",
+                            "type": "string"
+                        },
+                        {
+                            "name": "last_device",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dlp_parent_id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "conn_starttime",
+                            "type": "int"
+                        },
+                        {
+                            "name": "device_classification",
+                            "type": "string"
+                        },
+                        {
+                            "name": "last_timestamp",
+                            "type": "int"
+                        },
+                        {
+                            "name": "browser_version",
+                            "type": "string"
+                        },
+                        {
+                            "name": "nsdeviceuid",
+                            "type": "string"
+                        },
+                        {
+                            "name": "page_site",
+                            "type": "string"
+                        },
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dstport",
+                            "type": "int"
+                        },
+                        {
+                            "name": "src_country",
+                            "type": "string"
+                        },
+                        {
+                            "name": "conn_endtime",
+                            "type": "int"
+                        },
+                        {
+                            "name": "malsite_longitude",
+                            "type": "int"
+                        },
+                        {
+                            "name": "md5",
+                            "type": "string"
+                        },
+                        {
+                            "name": "req_cnt",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dlp_is_unique_count",
+                            "type": "string"
+                        },
+                        {
+                            "name": "file_cls_encrypted",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "user_id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "last_country",
+                            "type": "string"
+                        },
+                        {
+                            "name": "matched_username",
+                            "type": "string"
+                        },
+                        {
+                            "name": "dstip",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "destinations": {
+                "logAnalytics": [
+                    {
+                        "workspaceResourceId": "{{workspaceResourceId}}",
+                        "name": "clv2ws1"
+                    }
+                ]
+            },
+            "dataFlows": [
+                {
+                    "streams": [
+                        "Custom-NetskopeAlertsEvents_CL"
+                    ],
+                    "destinations": [
+                        "clv2ws1"
+                    ],
+                    "transformKql": "source\n| extend TimeGenerated = todatetime(datetime(1970-01-01) + (timestamp / 1000) * 1s)\n| project-rename count_i = ['count']\n| project-rename title_s = ['title']\n| project-rename type_s = ['type']\n| project-away _id\n\n",
+                    "outputStream": "Custom-NetskopeAlertsEvents_CL"
+                }
+            ]
+        }
+    }
+]

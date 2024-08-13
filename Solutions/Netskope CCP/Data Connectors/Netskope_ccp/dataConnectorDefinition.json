@@ -1,0 +1,105 @@
+{
+	"type": "Microsoft.SecurityInsights/dataConnectorDefinitions",
+	"apiVersion": "2022-09-01-preview",
+	"name": "NetskopeAlertUI",
+	"location": "{{location}}",
+	"kind": "Customizable",
+	"properties": {
+		"connectorUiConfig": {
+			"id": "NetskopeAlertUI",
+			"title": "Netskope Alerts CCP",
+			"publisher": "Masero",
+			"descriptionMarkdown": "The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily connect your Cisco Meraki organization events (Security events, Configuration Changes and API Requests) to Microsoft Sentinel. The data connector uses the [Cisco Meraki REST API](https://developer.cisco.com/meraki/api-v1/#!get-organization-appliance-security-events) to fetch logs and supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received data and ingests into ASIM and custom tables in your Log Analytics workspace. This data connector benefits from capabilities such as DCR based ingestion-time filtering, data normalization.\n\n **Supported ASIM schema:** \n 1. Network Session \n 2. Web Session  \n 3. Audit Event",
+			"graphQueriesTableName": "NetskopeAlertEvents_CL",
+			"graphQueries": [
+				{
+					"metricName": "Total data received",
+					"legend": "data received",
+					"baseQuery": "NetskopeAlertEvents_CL"
+				}
+			],
+			"sampleQueries": [
+				{
+					"description": "Get Sample of Netskope events",
+					"query": "{{graphQueriesTableName}}\n | take 10"
+				}
+			],
+			"dataTypes": [
+				{
+					"name": "{{graphQueriesTableName}}",
+					"lastDataReceivedQuery": "{{graphQueriesTableName}} \n | where TimeGenerated > ago(7d) | summarize Time = max(TimeGenerated)\n | where isnotempty(Time)"
+				}
+			],
+			"connectivityCriteria": [
+				{
+					"type": "HasDataConnectors"
+				}
+			],
+			"availability": {
+				"isPreview": false
+			},
+			"permissions": {
+				"resourceProvider": [
+					{
+						"provider": "Microsoft.OperationalInsights/workspaces",
+						"permissionsDisplayText": "Read and Write permissions are required.",
+						"providerDisplayName": "Workspace",
+						"scope": "Workspace",
+						"requiredPermissions": {
+							"write": true,
+							"read": true,
+							"delete": true
+						}
+					}
+				],
+				"customs": [
+					{
+                        "name": "Netskope organisation name.",
+                        "description": "The Netskope data connector requires you to provide your organisation name. You can find your organisation name by signing into the Netskope portal and checking your settings."
+                    },
+                    {
+                        "name": "Netskope API key.",
+                        "description": "The Netskope data connector requires you to provide a valid API key. You can create one by following the [Netskope documentation](https://docs.netskope.com/en/rest-api-v2-overview-312207/)."
+                    }
+				]
+			},
+			"instructionSteps": [
+                {
+                    "title": "STEP 1 - Create a Netskope API key.",
+                    "description": "Follow the [Netskope documentation](https://docs.netskope.com/en/rest-api-v2-overview-312207/) for guidance on this step."
+                },
+				{
+                    "title": "STEP 2 - Enter your Netskope product Details",
+                    "description": "Enter your Netskope organisation name & API Token below:",
+                    "instructions": [
+                        {
+                            "type": "Textbox",
+                            "parameters": {
+                                "label": "Organisation Name",
+                                "placeholder": "Enter your organisation name",
+                                "type": "text",
+                                "name": "Organisation"
+                            }
+                        },
+                        {
+                            "type": "Textbox",
+                            "parameters": {
+                                "label": "API Key",
+                                "placeholder": "Enter your API Key",
+                                "type": "password",
+                                "name": "ApiKey"
+                            }
+                        },
+                        {
+                            "type": "ConnectionToggleButton",
+                            "parameters": {
+                                "connectLabel": "connect",
+                                "name": "connect"
+                            }
+                        }
+                    ]
+                }
+			]
+		}
+	}
+}

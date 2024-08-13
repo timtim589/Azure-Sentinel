@@ -1,0 +1,39 @@
+[
+    {
+        "type": "Microsoft.SecurityInsights/dataConnectors",
+        "apiVersion": "2022-10-01-preview",
+        "name": "NetskopeAlertv2CCP",
+        "kind": "RestApiPoller",
+        "properties": {
+            "connectorDefinitionName": "NetskopeAlertUI",
+            "dataType": "NetskopeAlertEvents_CL",
+            "dcrConfig": {
+                "streamName": "Custom-NetskopeAlertEvents",
+                "dataCollectionEndpoint": "{{dataCollectionEndpoint}}",
+                "dataCollectionRuleImmutableId": "{{dataCollectionRuleImmutableId}}"
+            },
+            "auth": {
+                "type": "APIKey",
+                "ApiKeyName": "Netskope-Api-Token",
+                "ApiKey": "{{ApiKey}}"
+            },
+            "request": {
+                "apiEndpoint": "ttps://{{Organisation}}.goskope.com/api/v2/events/dataexport/events/alert?operation=next&index=codeless",
+                "httpMethod": "GET",
+                "queryWindowInMin": 5,
+                "queryTimeFormat": "UnixTimestamp", 
+                "rateLimitQps": 10,
+                "retryCount": 3,
+                "timeoutInSeconds": 60,
+                "headers": {
+                    "Accept": "application/json"
+                }
+            },
+            "response": {
+                "eventsJsonPaths": [
+                    "$.result"
+                ]
+            }
+        }
+    }
+]
